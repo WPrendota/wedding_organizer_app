@@ -1,0 +1,16 @@
+{% extends "info/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <div class="container-standard container-standard para-centered">
+
+        <a class="btn btn-primary para-font-body para-space-small button-expandable" id="project" href="{% url 'new_wedding' %}" role="button">
+                New Wedding
+        </a>
+
+        <a class="btn btn-primary para-font-body para-space-small button-expandable" id="project" href=" {% url 'wedding_organizer_app_management' %}" role="button">
+                Wedding Management
+        </a>
+
+    </div>
+{% endblock %}

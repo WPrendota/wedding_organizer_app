@@ -1,0 +1,23 @@
+{% extends "info/base.html" %}
+{% block content %}
+
+<div class="container-standard para-centered para-font-body">
+    {% for wedding in weddings %}
+
+     <a class="btn para-font-body button-expandable" id="project" role="button">
+                Wedding hall: {{ wedding.hall_name }}
+     </a>
+
+        {% for table_spot_image in table_spots_images %}
+            <div class="hall">
+                <img src="data:image/png;base64,{{table_spot_image}}" alt="There is no data to display"
+                             width=500 height=auto />
+            </div>
+
+            <br>
+        {% endfor %}
+
+    {% endfor %}
+</div>
+
+{% endblock %}

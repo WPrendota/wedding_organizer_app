@@ -1,0 +1,25 @@
+{% extends "info/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container-standard container-standard para-centered">
+    <p class="para-space-small"></p>
+
+    <a class="btn btn-primary para-font-body button-expandable" id="project" href="{% url 'add_table' %}" role="button">
+        Add Table
+    </a>
+
+    <p class="para-space-small"></p>
+
+    <a class="btn btn-primary para-font-body button-expandable" id="project" href="{% url 'add_guest' %}" role="button">
+        Add Guest
+    </a>
+
+    <p class="para-space-small"></p>
+
+    <a class="btn btn-primary para-font-body button-expandable" id="project" href="{% url 'generate_halls' %}" role="button">
+        Generate Hall
+    </a>
+</div>
+
+{% endblock %}

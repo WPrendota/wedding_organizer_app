@@ -1,0 +1,18 @@
+{% extends "info/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div>
+    <div class="container-standard para-centered para-font-body">
+        <p class="text-gym-app-large para-text">Add New Guest: </p>
+            <form action="" method="post">
+                {% csrf_token %}
+
+                {{ form_g|crispy }}
+
+                <button type="submit" class="btn btn-primary para-font-body para-space-small button-expandable">Done!</button>
+            </form>
+    </div>
+</div>
+
+{% endblock %}

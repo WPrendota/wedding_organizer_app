@@ -1,0 +1,20 @@
+{% extends "info/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<p>
+    <div>
+        <div class="md-6 mb-0">
+            <p class="container-standard para-font-body">Add New Wedding Reception: </p>
+            <form action="" method="post">
+                {% csrf_token %}
+
+                {{ form_w|crispy }}
+
+                <button type="submit" class="btn btn-primary para-font-body button-expandable">Done!</button>
+            </form>
+        </div>
+    </div>
+</p>
+
+{% endblock %}
