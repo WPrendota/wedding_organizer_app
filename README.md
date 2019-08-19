@@ -1,6 +1,6 @@
-# wedding_organizer_app
+# The Wedding Organizer App
 
-**The simple tools for managing PDF files.**
+**Positioning of guests by the seats.**
 
 Version 1.0.0
 
